@@ -1,0 +1,116 @@
+body {
+    background-image: url('background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #e6d9d9;
+    text-shadow: 2px 2px 1px black;
+    font-family: "Palatino", "Book Antiqua", serif;
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#intro {
+    position: absolute;
+    padding: 15px 25px;
+    position: center;
+    background-color: black;
+}
+
+#weatherContainer {
+    box-shadow: 0px 2px 30px 16px #00000048;
+    opacity: 0.9;
+    width: 38vh;
+    text-align: center;
+    margin-top: 132px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, .2);
+    background-color: rgb(0 0 0 / 10%);
+    padding: 36px;
+    border-radius: 10px;
+    position: absolute;
+    visibility: hidden;
+}
+#weatherContainer h1 {
+    margin: 18px;
+    font-size: 42px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+#searchContainer {
+    padding: 15px;
+    position: absolute;
+    top: 8;
+    right: 8;
+   /* backdrop-filter: blur(30px);
+   /* background: rgba(255, 255, 255, .2);
+    background-color: rgb(0 0 0 / 10%);
+    /* padding: 36px; */
+    border-radius: 6px;
+}
+#searchContainer input {
+    width: 200px;
+}
+#searchContainer button {
+    background-color:white;
+    color: white;
+    width: 75px;
+}
+.searchControl {
+    font-size: 30px;
+    box-shadow: 1px 0px 3px black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    outline: none;
+}
+@media (min-width: 768px) {
+
+    #searchContainer input {
+        font-size: 22px;
+        border: 1px solid black;
+        border-radius: 44px;
+        padding-left: 13px;
+        width: 45vh;
+        height: 6vh;
+    }
+    #searchContainer button{
+        font-size: 22px;
+        border: 0px solid whitesmoke;
+        border-radius: 42px;
+        width: 6vh;
+        height: 6vh;
+    }
+}
+#weatherMain {
+    margin-top: -20px;
+    text-align: center;
+    display: inline-grid;
+    margin-bottom: 24px;
+}
+#weatherMain div {
+    display: inline-block;
+}
+#weatherDescriptionHeader {
+    font-size: 28px;
+    vertical-align: 50%;
+}
+#temperature {
+    font-size: 38px;
+    vertical-align: 25%;
+}
+.bottom-details {
+    padding: 4px;
+    display: block;
+    font-size: 24px;
+    text-align: center;
+}
+hr {
+    margin-bottom: 20px;
+}

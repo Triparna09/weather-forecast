@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>WEATHER FORECAST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <video id="backgroundVideo" autoplay loop>
+        <source src="" type="video/mp4">
+    </video>
+
+    <div id="searchContainer">
+        <input class="searchControl" type="text" placeholder="🔍Please Enter City Name" id="searchInput">
+        <button style="cursor:pointer" class="searchControl" id="searchBtn"><i class="fa fa-search" style="color: #04122a;"></i></button>
+    </div>
+    <div id="weatherContainer">
+        <div id="weatherDescription">
+            <h1 id="cityHeader"></h1>
+            <div id="weatherMain">
+                <div><img style="width: 100px; height: 100px; margin: 0px 69px;" id="documentIconImg"></div>
+                <div style="font-size: 35px;" id="temperature">C</div>
+                <div style="font-size: 35px;" id="weatherDescriptionHeader"></div>
+            </div>
+            <hr>
+            <div id="windSpeed" class="bottom-details"></div>
+            <div id="humidity" class="bottom-details"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
